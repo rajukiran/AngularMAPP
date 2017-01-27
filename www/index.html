@@ -56,17 +56,15 @@
         </div>
         
         <!-- Pages -->
-        <div class="pages navbar-through toolbar-through">
+        <div class="pages navbar-fixed toolbar-fixed">
           
           <!-- Page 1 -->
           <div data-page="index" class="page" ng-controller="IndexPageController">
             <!-- Page content-->
               
             <div class="page-content">
-                <br />
-                <br />
-                <a href="#detailsPage" ng-click="onItemClicked(message)" class = "item-link item-content">Details</a>
-                <a href="#loginPage" class ="item-link item-content">Login</a>
+<!--                <a href="#detailsPage" ng-click="onItemClicked(message)" class = "item-link item-content">Details</a>-->
+                <a href="#loginPage" class ="button no-ripple" >Login</a>
               <div class="card">
                   <div class="card-content">
                     <div class="card-content-inner">Consumers Count :: {{message.consumersCount}}</div>
@@ -109,6 +107,11 @@
             
           <!-- Page 3 -->
           <div data-page="loginPage" class="page cached" ng-controller="LoginPageController">
+              <div class="toolbar">
+              <div class="toolbar-inner">
+                Hello
+              </div>
+            </div>   
             <!-- Page content-->
             <div class="page-content">
               <!-- Login Page -->
